@@ -1,0 +1,145 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Changed width to 100% */
+    max-width: 800px; /* Optional: You can set a max-width if needed */
+    margin-top: 100px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+#login-form {
+    border: 1px solid black;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#expense-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.expense-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.expense-container h3 {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expense-table th, .expense-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.expense-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
